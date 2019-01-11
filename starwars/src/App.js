@@ -6,14 +6,13 @@ import Characters from './components/Characters';
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
       starwarsChars: []
     };
   }
 
-  componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
-  }
+  
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -31,11 +30,18 @@ class App extends Component {
       });
   };
 
+  componentDidMount() {
+    this.getCharacters('https://swapi.co/api/people');
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Characters componentDidMount={this.componentDidMount} getCharacters={this.UNSAFE_componentWillMount}/>
+        <Characters 
+          
+          stuff={this.state.starwarsChars}/>
+        
       </div>
     );
   }
