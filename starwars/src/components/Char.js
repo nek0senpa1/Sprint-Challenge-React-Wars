@@ -7,7 +7,7 @@ function Char(props) {
         <h1>{props.items.name}</h1>
         <h2>Mass: {props.items.mass} - Height: {props.items.height} - Birth year: {props.items.birth_year} </h2>
         
-        <h2>{props.items.starships.map(items => {
+        <h2>Favorite Starships:{props.items.starships.map(items => {
             return <Char2 items = {items} />
         })}</h2>
 

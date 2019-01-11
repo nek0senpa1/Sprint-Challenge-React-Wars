@@ -1,9 +1,10 @@
 import React from 'react';
+import Char3 from './Char3';
 
 function Char2(props) {
     return (
 
-        <h1>{props.items.name}</h1>
+        <h2>{props.items}</h2>
 
     )
        
