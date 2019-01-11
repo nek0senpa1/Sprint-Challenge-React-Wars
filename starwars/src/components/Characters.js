@@ -1,9 +1,12 @@
 import React from 'react';
+import Char from './Char';
 
 function Characters(props) {
     return (
         
-        <h2>{props.stuff}</h2>
+        <h2>{props.stuff.map(items => {
+            return <Char items = {items} />
+        })}</h2>
     )
 }
 
