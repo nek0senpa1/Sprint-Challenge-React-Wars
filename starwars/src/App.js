@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import './App.css';
+import './index.css';
 import Characters from './components/Characters';
 
 class App extends Component {
@@ -39,7 +40,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Characters 
-          
+          class ="swdisplay"
           stuff={this.state.starwarsChars}/>
         
       </div>

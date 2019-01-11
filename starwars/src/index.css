@@ -5,3 +5,10 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.swdisplay {
+  display: block;
+  border: 2px gold;
+  color: gold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
