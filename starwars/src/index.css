@@ -8,7 +8,7 @@ body {
 
 .swdisplay {
   display: block;
-  border: 2px gold;
+  border: 2px solid gold;
   color: gold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
