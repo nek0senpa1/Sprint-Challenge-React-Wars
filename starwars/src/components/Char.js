@@ -8,7 +8,7 @@ function Char(props) {
         <h2>Mass: {props.items.mass} - Height: {props.items.height} - Birth year: {props.items.birth_year} </h2>
         
         <h2>Films:{props.items.films.map(items => {
-            return <Char2 items = {items} />
+            console.log(items)
         })}</h2>
 
 
